@@ -7,11 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img src="/image.png" alt="img">
     <div class="container">
-        <input type="text" placeholder="Add a new task...">
-        <button id="btn">Add</button>
+        <div class="controls">
+            <input id="task-input" type="text" placeholder="Add a new task...">
+            <input id="deadline-input" type="date" title="Deadline">
+            <input id="time-input" type="time" title="Time">
+            <button id="btn">Add</button>
+        </div>
+        <div class="download-controls">
+            <button id="download-json">Download JSON</button>
+            <button id="download-csv">Download CSV</button>
+        </div>
         <div id="task-list"></div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
